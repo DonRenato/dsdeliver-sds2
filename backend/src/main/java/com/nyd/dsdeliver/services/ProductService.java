@@ -22,12 +22,6 @@ public class ProductService {
         return products.stream().map(x -> new ProductDTO(x)).collect(Collectors.toList());
     }
 
-    public Product getById(Long id){
-        return repository.findById(id).get();
-    }
 
-    public Product create(Product product){
-        return repository.save(product);
-    }
 
 }

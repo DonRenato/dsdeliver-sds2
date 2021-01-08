@@ -77,7 +77,7 @@ function OrderLocation({ onChangeLocation } : Props){
         <MapContainer 
           center={address.position} 
           zoom={13} 
-          scrollWheelZoom
+          scrollWheelZoom={false}
           key={address.position.lat}
           >
           <TileLayer
